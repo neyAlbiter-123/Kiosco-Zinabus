@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canje de Boletos - Confirmación</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- style.css contiene la base comun y los estilos propios de esta pantalla. -->
+</head>
+<!-- Clase de pagina: permite aislar los estilos de esta vista. -->
+<body class="pagina-bien">
+  <div class="pantalla">
+    
+    <!-- Encabezado -->
+    <header>
+      <div class="logo-item"><img src="img/logExPlus.png" class="logo-img logo-ex-plus" alt="Excelencia plus"></div>
+      <div class="logo-item"><img src="img/logExcelencia.png" class="logo-img" alt="Excelencia"></div>
+      <div class="logo-item"><img src="img/logZinabus.png" class="logo-img" alt="Zina-bus"></div>
+    </header>
+
+    <h1 class="titulo-pantalla">
+      VENTA DE<br>
+      <span>BOLETOS</span>
+    </h1>
+
+    <div class="linea-decorativa"></div>
+
+    <!-- Contenido Principal -->
+    <main class="contenedor-principal">
+      
+      <!-- Mensaje de Agradecimiento (Textos Aumentados) -->
+      <div class="mensaje-agradecimiento">
+        <h2>GRACIAS <span>por</span></h2>
+        <h3 class="texto-rosa">tu compra</h3>
+        <p class="instruccion-1">Tu boleto ha sido impreso. Acude a la sala de abordaje.</p>
+        <p class="instruccion-2">Asegurate de llevar tus boletos contigo.</p>
+      </div>
+
+      <!-- Icono Check Verde -->
+      <div class="icono-check">
+        <img src="img/verde.png" alt="Ã‰xito">
+      </div>
+
+      <!-- Contenedor del Boleto + Los 3 Botones Superpuestos -->
+      <div class="contenedor-boleto-con-botones">
+        <!-- Imagen del Boleto Saliente -->
+        <div class="imagen-boleto-salida">
+          <img src="img/CanjeBoletos1.png" alt="Boleto Impreso">
+        </div>
+
+        <!-- Bloque de 3 Botones -->
+        <div class="bloque-otra-compra">
+          <button class="btn-pregunta">
+            ¿QUIERES REALIZAR OTRA COMPRA?
+          </button>
+          
+          <div class="contenedor-botones-respuesta">
+           <button class="btn-respuesta btn-si" onclick="window.location.href='TipoServicioVenta.html'">SI</button>
+
+           <button class="btn-respuesta btn-no" onclick="window.location.href='Menu.html'">NO, GRACIAS</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="pie-kiosk">
+      <div class="pie-col-izquierda">
+        <div class="qr-box">
+          <img src="img/QR.png" alt="CÃ³digo QR">
+        </div>
+        <div class="redes">
+         <img class="icono-facebook" src="img/logoface.png" alt="Facebook">
+          <span>AutotransportesZinabus</span>
+        </div>
+      </div>
+
+      <div class="pie-col-derecha">
+        <div class="contacto">
+          <div class="atencion-titulo">Atencion a clientes</div>
+          <div class="telef">800 00 94 622</div>
+        </div>
+        <div class="sitio">www.autobuseszinacantepec.com.mx</div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

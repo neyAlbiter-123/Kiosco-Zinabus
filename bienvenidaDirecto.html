@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiosco - Venta de Boletos</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- style.css contiene la base comun y los estilos propios de esta pantalla. -->
+</head>
+<!-- Clase de pagina: permite aislar los estilos de esta vista. -->
+<body class="pagina-bienvenida">
+  <div class="pantalla">
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo-item"><img src="img/logExPlus.png" class="logo-img" alt="Excelencia plus"></div>
+        <div class="logo-item"><img src="img/logExcelencia.png" class="logo-img" alt="Excelencia"></div>
+        <div class="logo-item"><img src="img/logZinabus.png" class="logo-img" alt="Zina-bus"></div>
+    </header>
+
+     <h1 class="titulo-pantalla">VENTA DE<br><span>BOLETOS</span></h1>
+
+      <div class="btn-servicio">SERVICIO DIRECTO</div>
+
+      <div class="linea-decorativa"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-principal">
+
+      <!-- TARJETA DE USUARIO Y CONFIGURACIÓN -->
+      <section class="tarjeta-blanca tarjeta-configuracion">
+        <div class="encabezado-tarjeta-usuario">
+          <div class="usuario-info">
+            <span class="label-bienvenido">BIENVENIDO(A)</span>
+            <h2 class="nombre-usuario">MIGUEL ANGEL MARTINEZ ROJO</h2>
+          </div>
+
+          <!-- TOGGLE TIPO DE VIAJE -->
+          <div class="toggle-tipo-viaje">
+            <input type="radio" id="viaje-ida" name="tipo_viaje" checked>
+            <label for="viaje-ida" class="btn-toggle">IDA</label>
+
+            <input type="radio" id="viaje-redondo" name="tipo_viaje">
+            <label for="viaje-redondo" class="btn-toggle">REDONDO</label>
+          </div>
+        </div>
+
+        <div class="fila-configuracion">
+          <div class="caja-precio-total">
+            <span class="label-mini">SALDO EN MONEDERO</span>
+            <div class="monto-monedero">$150.00</div>
+          </div>
+
+         <!-- SECCIÓN DE PASAJEROS -->
+          <div class="caja-pasajeros">
+            <span class="label-mini">TIPO DE PASAJEROS</span>
+            <div class="contadores-pasajeros">
+
+              <!-- CONTADOR ADULTO -->
+              <div class="control-pasajero">
+                <span class="icon-user">👤</span>
+                <span class="tipo-nombre">ADULTO</span>
+                <div class="grupo-botones">
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('adulto', -1)">-</button>
+                  <span class="num-pasajeros" id="cant-adulto">0</span>
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('adulto', 1)">+</button>
+                </div>
+              </div>
+
+              <!-- CONTADOR INAPAM -->
+              <div class="control-pasajero">
+                <span class="icon-user">👤</span>
+                <span class="tipo-nombre">INAPAM</span>
+                <div class="grupo-botones">
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('inapam', -1)">-</button>
+                  <span class="num-pasajeros" id="cant-inapam">0</span>
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('inapam', 1)">+</button>
+                </div>
+              </div>
+
+              <!-- CONTADOR NIÑO -->
+              <div class="control-pasajero">
+                <span class="icon-user">👤</span>
+                <span class="tipo-nombre">NIÑO</span>
+                <div class="grupo-botones">
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('nino', -1)">-</button>
+                  <span class="num-pasajeros" id="cant-nino">0</span>
+                  <button type="button" class="btn-contador" onclick="cambiarCantidad('nino', 1)">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER ORIGEN -->
+      <section class="banner-origen">
+        <div class="info-origen">
+          <span class="label-origen">TU VIAJE INICIA EN</span>
+          <h3 class="ciudad-origen">OBSERVATORIO, CDMX</h3>
+        </div>
+        <button class="btn-cambiar">CAMBIAR</button>
+      </section>
+
+      <!-- TARJETA DESTINOS FAVORITOS -->
+      <section class="tarjeta-blanca tarjeta-destinos">
+        <div class="encabezado-destinos">
+          <span class="titulo-destinos">TUS DESTINOS FAVORITOS</span>
+          <span class="estrella-fav"> </span>
+        </div>
+
+        <div class="grid-destinos">
+          <button class="card-destino">
+            <div class="destino-nombre">TOLUCA, MEX</div>
+            <div class="destino-sub">Precio aproximado de viaje</div>
+            <div class="destino-precio">$95.00</div>
+          </button>
+
+          <button class="card-destino">
+            <div class="destino-nombre">IXT. DE LA SAL, MEX</div>
+            <div class="destino-sub">Precio aproximado de viaje</div>
+            <div class="destino-precio">$165.00</div>
+          </button>
+
+          <button class="card-destino">
+            <div class="destino-nombre">CHALMA, MEX</div>
+            <div class="destino-sub">Precio aproximado de viaje</div>
+            <div class="destino-precio">$85.00</div>
+          </button>
+        </div>
+      </section>
+      <button class="continuar" onclick="window.location.href='asientos.html'">
+    CONTINUAR
+</button>
+
+      <!-- BOTONES DE ACCIÓN -->
+      <section class="grid-acciones">
+       <button class="btn-accion rosa" onclick="window.location.href='otrosDestinos.html'">
+    OTROS DESTINOS
+  </button>
+
+<button class="btn-accion gris" onclick="window.location.href='Menu.html'">
+     SALIR
+</button>
+
+<button class="btn-accion rosa" onclick="window.location.href='eligeCompañia.html'">
+    RECARGA TIEMPO AIRE
+</button>
+
+<button class="btn-accion gris" onclick="window.location.href='TipoServicioVenta.html'">
+    PASO ANTERIOR
+</button>
+      </section>
+
+      <!-- ILUSTRACIÓN BOLETOS -->
+      <div class="imagen-boletos-decoracion">
+        <img src="img/ventaboletos.png" alt="Boletos Ilustración">
+      </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-kiosk">
+      <div class="pie-col-izquierda">
+        <div class="qr-box">
+          <img src="img/QR.png" alt="Código QR">
+        </div>
+        <div class="redes">
+          <img src="img/logoface.png" alt="Facebook">
+          <span>AutotransportesZinabus</span>
+        </div>
+      </div>
+
+      <div class="pie-col-derecha">
+        <div class="contacto">
+          <div class="atencion-titulo">Atención a clientes</div>
+          <div class="telefono">800 00 94 622</div>
+        </div>
+        <div class="sitio">www.autobuseszinacantepec.com.mx</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

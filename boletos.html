@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Boletos - Kiosco Interactivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina-boletos">
+  <div class="pantalla-kiosk">
+    <header class="header-marcas">
+      <img src="img/logExPlus.png" class="logo-img logo-ex-plus" alt="Excelencia plus">
+      <img src="img/logExcelencia.png" class="logo-img" alt="Excelencia">
+      <img src="img/logZinabus.png" class="logo-img" alt="Zina-bus">
+    </header>
+
+    <h1 class="titulo-principal">VENTA DE <br><span class="resaltado">BOLETOS</span></h1>
+    <div class="vb-linea-decorativa"></div>
+
+    <main class="vb-contenedor-principal">
+      <div class="vb-bloque-central">
+        <div class="vb-bloque-botones">
+          <button class="vb-btn-magenta" type="button" onclick="window.location.href='TipoServicioZI.html'">ORIGEN</button>
+          <button class="vb-btn-magenta" type="button">DESTINO</button>
+        </div>
+
+        <div class="vb-panel-flechas">
+          <button class="vb-btn-flecha vb-flecha-arriba" type="button" aria-label="Subir">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 4l-8 8h16z"/>
+            </svg>
+          </button>
+
+          <button class="vb-btn-flecha vb-flecha-abajo" type="button" aria-label="Bajar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 20l8-8H4z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-kiosk">
+      <div class="columna-izquierda">
+        <div class="qr-box">
+          <img src="img/QR.png" alt="Código QR">
+        </div>
+        <div class="red-social">
+          <svg class="icono-facebook" viewBox="0 0 36 36" aria-hidden="true">
+            <circle cx="18" cy="18" r="18" fill="#1877F2"/>
+            <path fill="#ffffff" d="M24.25 23.25l.754-5.25h-4.717v-3.446c0-1.341.658-2.651 2.768-2.651h2.144V7.719s-1.946-.332-3.805-.332c-3.882 0-6.418 2.355-6.418 6.613v4h-4.313v5.25h4.313v12.531a18.17 18.17 0 005.624 0V23.25h3.65z"/>
+          </svg>
+          <span>AutotransportesZinabus</span>
+        </div>
+      </div>
+
+      <div class="columna-derecha">
+        <div class="info-atencion">
+          <div class="titulo-atencion">Atención a clientes</div>
+          <div class="telef">800 00 94 622</div>
+        </div>
+        <div class="web">www.autobuseszinacantepec.com.mx</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

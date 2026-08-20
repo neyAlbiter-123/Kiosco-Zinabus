@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiosco Bus - Venta de Boletos</title>
+ <link rel="stylesheet" href="styles.css">
+  <!-- style.css contiene la base comun y los estilos propios de esta pantalla. -->
+</head>
+<!-- Clase de pagina: permite aislar los estilos de esta vista. -->
+<body class="pagina-confirmalPago">
+<div class="kiosk-screen">
+
+  <!-- ENCABEZADO Y LOGOS -->
+  <div>
+    <header class="header-marcas">
+      <img src="img/logExPlus.png" class="logo-img logo-ex-plus" alt="Excelencia plus">
+      <img src="img/logExcelencia.png" class="logo-img" alt="Excelencia">
+      <img src="img/logZinabus.png" class="logo-img" alt="Zina-bus">
+    </header>
+
+    <div class="header-section">
+      <div class="main-title-top">VENTA DE</div>
+      <div class="main-title-bottom">BOLETOS</div>
+      <div class="service-badge">SERVICIO DIRECTO</div>
+    </div>
+
+    <div class="step-bar">
+      <div class="bar active"></div>
+      <div class="bar inactive"></div>
+      <div class="bar inactive"></div>
+    </div>
+  </div>
+
+  <!-- TARJETA USUARIO Y MONEDERO -->
+  <div class="user-card">
+    <div class="user-top">
+      <div>
+       
+      </div>
+      <div class="caja-tipo-viaje">
+        <span class="active">IDA</span>
+        <span class="inactive">REDONDO</span>
+      </div>
+    </div>
+
+    <div class="user-bottom">
+      <div class="wallet-badge">
+        <span class="wallet-label">SALDO DEL MONEDERO</span>
+        <span class="wallet-amount">$150.00</span>
+      </div>
+
+      <div class="route-pills">
+        <span class="pill">TOLUCA MEX</span>
+        <span class="pill">VALLE DE BRAVO</span>
+        <span class="pill passenger"> 1 pas</span>
+      </div>
+
+      <div class="price-pill">
+        <span>$140.00</span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TARJETA DE HORARIO -->
+  <div class="schedule-card">
+    <button class="fav-btn"></button>
+    
+    <div class="time-block">
+      <div class="time-container">
+        <span class="time">07:30</span>
+        <div class="duration-box">
+          <span class="duration-text">1h 25m</span>
+          <div class="arrow-line">â”€â”€â”€â”€â”€â”€â”€â”€â”€></div>
+          <span class="nonstop-text">SIN ESCALAS</span>
+        </div>
+        <span class="time">08:55</span>
+      </div>
+    </div>
+
+    <div class="sub-service-tag">SERVICIO DIRECTO</div>
+
+    <div class="amenities">
+      <span class="amenities-title">Servicios</span>
+      <span> WiFi</span>
+      <span> Asientos Reclinables</span>
+    </div>
+  </div>
+
+  
+
+  <!-- PIE DE PAGINA CON QR Y ATENCION A CLIENTES -->
+  <div class="bottom-info">
+    
+     <div class="pie-col-izquierda">
+        <div class="qr-box">
+          <img src="img/QR.png" alt="Codigo QR">
+        </div>
+        <div class="redes">
+           <img class="icono-facebook" src="img/logoface.png" alt="Facebook">
+          <span>AutotransportesZinabus</span>
+        </div>
+      </div>
+
+      <div class="pie-col-derecha">
+        <div class="contacto">
+          <div class="atencion-titulo">Atención a clientes</div>
+          <div class="telef">800 00 94 622</div>
+        </div>
+        <div class="sitio">www.autobuseszinacantepec.com.mx</div>
+      </div>
+  </div>
+
+
+
+
+
+ 
+
+
+  
+<!-- 1. CAPA DE FONDO QUE OSCURECE TODO -->
+<div class="pantalla-oscura">
+
+  <!-- 2. LA TARJETA BLANCA CENTRAL -->
+  <div class="tarjeta-blanca">
+    
+    <div class="nombre-usuario">GEOVANNI MARTINEZ ROJO</div>
+
+    <!-- FILA: MONEDERO Y BOTONES IDA/REDONDO -->
+    <div class="fila-arriba">
+      <div class="caja-monedero">
+        <span class="texto-pequeno">SALDO MONEDERO</span>
+        <span class="monto-monedero">$150.00</span>
+      </div>
+
+      <div class="caja-tipo-viaje">
+        <span class="active">IDA</span>
+        <span class="inactive">REDONDO</span>
+      </div>
+    </div>
+
+     
+
+    <!-- CAJA VERDE CLARO DE LA RUTA Y PRECIO -->
+    <div class="caja-verde">
+      <div class="lista-etiquetas">
+        <span class="etiqueta-gris">TOLUCA, MEX</span>
+        <span class="etiqueta-gris">VALLE DE BRAVO</span>
+        <span class="etiqueta-azul">1 pax</span>
+      </div>
+
+      <div class="precio-rosa">$140.00</div>
+    </div>
+
+    <!-- BOTON AZUL GRANDE -->
+   <button class="boton-pagar" onclick="window.location.href='recargaAireZI.html'">
+    CONFIRMAR Y PROCEDER AL PAGO
+</button>
+  </div>
+
+  <!-- 3. DECORACION DE ABAJO (BOLETOS Y BOTON PASO ANTERIOR) -->
+  <div class="seccion-abajo">
+    <img src="" alt="" class="imagen-boletos">
+   <button class="boton-paso-anterior" onclick="window.location.href='asientosZI.html'">
+    PASO ANTERIOR
+</button>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
